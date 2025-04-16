@@ -1,0 +1,50 @@
+[
+    {
+        "country": "US",
+        "domain": "indeed.com",
+        "keyword_search": "\"data engineer\" -title:senior -title:principal -title:staff -title:lead",
+        "location": "St. Louis, MO",
+        "date_posted": "Last 24 hours",
+        "posted_by": ""
+    },
+    {
+        "country": "US",
+        "domain": "indeed.com",
+        "keyword_search": "\"data engineer\" -title:senior -title:principal -title:staff -title:lead",
+        "location": "Chicago, IL",
+        "date_posted": "Last 24 hours",
+        "posted_by": ""
+    },
+    {
+        "country": "US",
+        "domain": "indeed.com",
+        "keyword_search": "\"data engineer\" -title:senior -title:principal -title:staff -title:lead",
+        "location": "Remote",
+        "date_posted": "Last 24 hours",
+        "posted_by": ""
+    },
+    {
+        "country": "US",
+        "domain": "indeed.com",
+        "keyword_search": "\"data platform engineer\" -title:senior -title:principal -title:staff -title:lead",
+        "location": "Remote",
+        "date_posted": "Last 24 hours",
+        "posted_by": ""
+    },
+    {
+        "country": "US",
+        "domain": "indeed.com",
+        "keyword_search": "\"analytics engineer\" -title:senior -title:principal -title:staff -title:lead",
+        "location": "Remote",
+        "date_posted": "Last 24 hours",
+        "posted_by": ""
+    },
+    {
+        "country": "US",
+        "domain": "indeed.com",
+        "keyword_search": "\"etl developer\" -title:senior -title:principal -title:staff -title:lead",
+        "location": "Remote",
+        "date_posted": "Last 24 hours",
+        "posted_by": ""
+    }
+]
