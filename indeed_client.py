@@ -4,7 +4,6 @@ import logging
 from pathlib import Path
 
 import requests
-from dotenv import load_dotenv
 
 logging.basicConfig(
     level=logging.INFO,
@@ -12,7 +11,10 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 
-load_dotenv()
+if os.getenv("ENV", "local") == "local":
+    from dotenv import load_dotenv
+
+    load_dotenv()
 
 ROOT = Path(__file__).parent
 BRD_URL = "https://api.brightdata.com/datasets/v3/trigger"
@@ -40,7 +42,8 @@ EXTERNAL_STORAGE_DETAILS = {
 
 PAYLOAD_FP = ROOT / "indeed_payload.json"
 
-if __name__ == "__main__":
+
+def call_brd_indeed_kwd_api():
     try:
         with open(PAYLOAD_FP, "r") as file:
             payload = {
@@ -57,3 +60,7 @@ if __name__ == "__main__":
         logging.info(f"{response.status_code} {response.url} {response.text}")
     except Exception as e:
         logging.error(f"Error during Bright Data trigger: {e}")
+
+
+if __name__ == "__main__":
+    call_brd_indeed_kwd_api()
