@@ -12,4 +12,4 @@ COPY . ./
 
 RUN uv sync
 
-CMD ["python3", "indeed_client.py"]
+CMD ["uv", "run", "indeed_client.py"]
